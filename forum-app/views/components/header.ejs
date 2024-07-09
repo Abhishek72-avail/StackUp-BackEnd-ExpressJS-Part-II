@@ -1,0 +1,26 @@
+<nav class="navbar">
+    <div class="row split align-center w-100">
+        <a href="/dashboard" style="color: white; font-size: 30px;">ChainCraft.com</a>
+        <% if(username){ %>
+            <ul>
+                <li><a class="nav-link" href="/post">Home </a></li>
+                <li><a class="nav-link" href="/post">Post</a></li>
+                <li><a class="nav-link" href="/post">Request</a></li>
+                <li><a class="nav-link" href="/post">Tracking</a></li>
+                <li><a class="nav-link" href="/post">Monitor</a></li>
+                <li><a class="nav-link" href="/post">Order</a></li>
+            </ul>
+            <% } else { %>
+                <div class="row gap-10">
+                    <a class="nav-link" href="/auth/login">Login</a>
+                    <a class="nav-link" href="/auth/register">Sign Up</a>
+                    <a class="nav-link" href="/auth/register">Get Started</a>
+                    <a class="nav-link" href="/auth/register">About</a>
+                    <a class="nav-link" href="/auth/register">Services</a>
+                    <a class="nav-link" href="/auth/register">Order</a>
+                    <a class="nav-link" href="/auth/register">Tracking</a>
+                    <!-- <a class="nav-link" href="/auth/register">Client</a> -->
+                </div>
+                <% } %>
+    </div>
+</nav>
